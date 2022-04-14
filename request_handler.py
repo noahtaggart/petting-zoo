@@ -1,24 +1,34 @@
-from models import Alpaca, Catfish, Cottonmouth, Goat, Koi, Llama, Longnose_Gar, Milksnake, Miniature_Horse, Plain_Bellied_Watersnake, Rough_Greensnake, Salmon, Scarletsnake, Sheep, Turtle
-        
-Pippo = Llama('Pippo', 'Domestic Llama', 'Petting area', 'morning shift', 'Llama Food' )
-Obi = Goat('Obi', 'Domestic Goat', 'Petting area', 'morning shift', 'Goat Chow' )
-Zackariah = Sheep('Zackariah', 'Domestic Sheep', 'Petting area', 'midday shift', "Shepherds Pie" )
-Nana = Alpaca('Nana', 'Domestic Alpaca', 'Petting area', 'evening shift', "Alpaca Cracka" )
-Carr = Miniature_Horse('Carr', 'Domestic Miniature Horse', 'Petting area', 'evening shift', "Horse D'oeuvres" )
+from models import PettingZoo, WetLands, SnakePit
+from animals import Obi, Pippo, Zackariah, Nana, stinky, Carr, Malvina, Phillida, Konrad, Clovis, Heath, Justus, Brody, Angelica, Joscelin, Lise
 
-Justus = Turtle('Justus', 'Domestic Turtle', 'Pond', "Turtle Tracks" )
-Brody = Salmon('Brody', 'Domestic Salmon', 'Pond', "Salmon Snacks" )
-Angelica = Catfish('Angelica', 'Domestic Catfish', 'Pond', "Meowmix" )
-Joscelin = Longnose_Gar('Joscelin', 'Domestic Longnose Gar', 'Pond', "GAR-lic Bread" )
-Lise = Koi('Lise', 'Domestic Koi', 'Pond', "Koi Beans" )
+varmint_village = PettingZoo("Varmint Village")
 
-Malvina = Milksnake('Malvina', 'Domestic Milksnake', 'Glass Tank', "Milksnake boiled over hard with a side of the finest Jelly Beans, served raw")
-Phillida = Scarletsnake('Phillida', 'Domestic Scarletsnake', 'Glass Tank', "Scarlet Velvet Cake")
-Konrad = Rough_Greensnake('Konrad', 'Domestic Rough Greensnake', 'Glass Tank', "Smooth Redcake")
-Clovis = Cottonmouth('Clovis', 'Domestic Cottonmouth', 'Glass Tank', "Cotton Candy")
-Heath = Plain_Bellied_Watersnake('Heath', 'Domestic Plain Bellied Watersnake', 'Glass Tank', "toast")
+varmint_village.addList(Obi)
+varmint_village.addList(Pippo)
+varmint_village.addList(Zackariah)
+varmint_village.addList(Nana)
+varmint_village.addList(stinky)
+varmint_village.addList(Carr)
 
-print(Obi.feed())
-print(f'{Obi.name} the {Obi.species} is in the {Obi.area} during the {Obi.shift}')
+slither_inn = SnakePit("Slither Inn")
 
-print(Obi)
+slither_inn.addList(Malvina)
+slither_inn.addList(Phillida)
+slither_inn.addList(Konrad)
+slither_inn.addList(Clovis)
+slither_inn.addList(Heath)
+
+dire_dire_docks = WetLands("Dire, Dire Docks")
+
+dire_dire_docks.addList(Justus)
+dire_dire_docks.addList(Brody)
+dire_dire_docks.addList(Angelica)
+dire_dire_docks.addList(Joscelin)
+dire_dire_docks.addList(Lise)
+
+
+
+
+
+
+

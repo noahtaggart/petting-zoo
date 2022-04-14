@@ -1,15 +1,3 @@
-from .alpaca import Alpaca
-from .catfish import Catfish
-from .cottonmouth import Cottonmouth
-from .goat import Goat
-from .koi import Koi
-from .llama import Llama
-from .longnose_gar import Longnose_Gar
-from .milksnake import Milksnake
-from .miniature_horse import Miniature_Horse
-from .plain_bellied_watersnake import Plain_Bellied_Watersnake
-from .rough_greensnake import Rough_Greensnake
-from .salmon import Salmon
-from .scarletsnake import Scarletsnake
-from .sheep import Sheep
-from .turtle import Turtle
+from .PettingZoo import Alpaca, Burro, Goat, Llama, Miniature_Horse, PettingZoo, Sheep
+from .WetLands import Catfish, Koi, Longnose_Gar, Salmon, Turtle
+from .SnakePit import Cottonmouth, Milksnake, Plain_Bellied_Watersnake, Rough_Greensnake, Scarletsnake, SnakePit
