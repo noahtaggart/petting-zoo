@@ -1,16 +1,9 @@
-from datetime import date
+from models import Animal
+# Designate Sheep as a child class by adding (Animal) after the class name
+class Sheep(Animal):
 
-class Sheep:
-    def __init__(self, name, species, area, shift, food):
-        self.name = name
-        self.species = species
-        self.area = area
-        self.shift = shift
-        self.food = food
+    # Remove redundant properties from Sheep's initialization, and set their values via Animal
+    def __init__(self, name, species, shift, food, chip_num):
+        super().__init__(name, species, food, chip_num)
+        self.shift = shift # stays on Sheep because not all animals have shifts
         self.walking = True
-        self.date_added = date.today()
-        
-    def feed(self):
-        return (f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-    def __str__(self):
-        return f"{self.name} is a {self.species}"

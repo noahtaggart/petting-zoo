@@ -1,26 +1,9 @@
-# import the python datetime module to help us create a timestamp
-from datetime import date
-        
-class Goat:
-    def __init__(self, name, species, area, shift, food, chip_num):
-        self.name = name
-        self.species = species
-        self.area = area
-        self.shift = shift
-        self.food = food
-        self.__chip_num = chip_num
+from models import Animal
+# Designate Goat as a child class by adding (Animal) after the class name
+class Goat(Animal):
+
+    # Remove redundant properties from Goat's initialization, and set their values via Animal
+    def __init__(self, name, species, shift, food, chip_num):
+        super().__init__(name, species, food, chip_num)
+        self.shift = shift # stays on Goat because not all animals have shifts
         self.walking = True
-        self.date_added = date.today()
-        
-    def feed(self):
-        return (f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-    def __str__(self):
-        return f"{self.name} is a {self.species}"
-    
-    @property 
-    def chip_num(self):
-        return self.__chip_num
-    
-    @chip_num.setter
-    def chip_num(self, number):
-        pass

@@ -1,14 +1,9 @@
-from datetime import date
+from models import Animal
+# Designate Burro as a child class by adding (Animal) after the class name
+class Burro(Animal):
 
-class Burro:
-
-    def __init__(self, name, species, shift, food):
-        self.name = name
-        self.species = species
-        self.shift = shift
-        self.date_added = date.today()
+    # Remove redundant properties from Burro's initialization, and set their values via Animal
+    def __init__(self, name, species, shift, food, chip_num):
+        super().__init__(name, species, food, chip_num)
+        self.shift = shift # stays on Burro because not all animals have shifts
         self.walking = True
-        self.food = food
-    
-    def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
