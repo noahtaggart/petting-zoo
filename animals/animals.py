@@ -2,7 +2,7 @@ from models import Llama, Goat, Sheep, Alpaca, Miniature_Horse, Turtle, Salmon, 
 
         
 Pippo = Llama('Pippo', 'Domestic Llama', 'Petting area', 'morning shift', 'Llama Food' )
-Obi = Goat('Obi', 'Domestic Goat', 'Petting area', 'morning shift', 'Goat Chow' )
+Obi = Goat('Obi', 'Domestic Goat', 'Petting area', 'morning shift', 'Goat Chow', 6996 )
 Zackariah = Sheep('Zackariah', 'Domestic Sheep', 'Petting area', 'midday shift', "Shepherds Pie" )
 Nana = Alpaca('Nana', 'Domestic Alpaca', 'Petting area', 'evening shift', "Alpaca Cracka" )
 Carr = Miniature_Horse('Carr', 'Domestic Miniature Horse', 'Petting area', 'evening shift', "Horse D'oeuvres" )
