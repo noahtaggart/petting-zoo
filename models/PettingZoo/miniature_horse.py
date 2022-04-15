@@ -1,17 +1,9 @@
-# import the python datetime module to help us create a timestamp
-from datetime import date
+from models import Animal
+# Designate Miniature_Horse as a child class by adding (Animal) after the class name
+class Miniature_Horse(Animal):
 
-class Miniature_Horse:
-    def __init__(self, name, species, area, shift, food):
-        self.name = name
-        self.species = species
-        self.area = area
-        self.shift = shift
-        self.food = food
+    # Remove redundant properties from Miniature_Horse's initialization, and set their values via Animal
+    def __init__(self, name, species, shift, food, chip_num):
+        super().__init__(name, species, food, chip_num)
+        self.shift = shift # stays on Miniature_Horse because not all animals have shifts
         self.walking = True
-        self.date_added = date.today()
-        
-    def feed(self):
-        return (f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-    def __str__(self):
-        return f"{self.name} is a {self.species}"

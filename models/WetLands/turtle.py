@@ -1,17 +1,9 @@
-# import the python datetime module to help us create a timestamp
-from datetime import date
+from models import Animal
+# Designate Turtle as a child class by adding (Animal) after the class name
+class Turtle(Animal):
 
-class Turtle:
-    def __init__(self, name, species, area, food):
-        self.name = name
-        self.species = species
-        self.area = area
-        self.food = food
-        self.walking = True
+    # Remove redundant properties from Turtle's initialization, and set their values via Animal
+    def __init__(self, name, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
         self.swimming = True
-        self.date_added = date.today()
-        
-    def feed(self):
-        return (f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-    def __str__(self):
-        return f"{self.name} is a {self.species}"
+        self.walking = True

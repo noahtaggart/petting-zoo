@@ -1,18 +1,15 @@
 from datetime import date
-class Llama:
 
-    def __init__(self, name, species, area, shift, food):
-        # Establish the properties of each animal
-        # with a default value
-        self.name = name
-        self.species = species
-        self.area = area
-        self.shift = shift
-        self.food = food
+from models import Animal
+
+# Designate Llama as a child class by adding (Animal) after the class name
+class Llama(Animal):
+
+    # Remove redundant properties from Llama's initialization, and set their values via Animal
+    def __init__(self, name, species, shift, food, chip_num):
+        super().__init__(name, species, shift, food, chip_num)
+        self.shift = shift # stays on Llama because not all animals have shifts
         self.walking = True
-        self.date_added = date.today()
         
     def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
-    def __str__(self):
-        return f"{self.name} is a {self.species}"
+        print(f'on {date.today()}, {self.name} had "Rockytop" sung to it so it would eat its {self.food}')
