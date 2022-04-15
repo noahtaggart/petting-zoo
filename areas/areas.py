@@ -1,30 +1,31 @@
-from models import PettingZoo, Wetlands, SnakePit
-from animals import Obi, Pippo, Zackariah, Nana, stinky, Carr, Malvina, Phillida, Konrad, Clovis, Heath, Justus, Brody, Angelica, Joscelin, Lise
+from models import PettingZoo, SnakePit, Wetlands
+from animals import Obi, Pippo, Zackariah, Nana, stinky, Carr, Malvina, Phillida, Konrad, Clovis, Heath, Justus, Brody, Angelica, Joscelin, Lise, Bob
 
-varmint_village = PettingZoo("Varmint Village")
+varmint_village = PettingZoo("Varmint Village", "cute, cuddly creatures")
 
-varmint_village.addList(Obi)
-varmint_village.addList(Pippo)
-varmint_village.addList(Zackariah)
-varmint_village.addList(Nana)
-varmint_village.addList(stinky)
-varmint_village.addList(Carr)
+varmint_village.add_animal(Obi)
+varmint_village.add_animal(Pippo)
+varmint_village.add_animal(Zackariah)
+varmint_village.add_animal(Nana)
+varmint_village.add_animal(stinky)
+varmint_village.add_animal(Carr)
+varmint_village.add_animal(Bob)
 
-slither_inn = SnakePit("Slither Inn")
+slither_inn = SnakePit("Slither Inn", "slimy, slithery, scary snakes")
 
-slither_inn.addList(Malvina)
-slither_inn.addList(Phillida)
-slither_inn.addList(Konrad)
-slither_inn.addList(Clovis)
-slither_inn.addList(Heath)
+slither_inn.add_animal(Malvina)
+slither_inn.add_animal(Phillida)
+slither_inn.add_animal(Konrad)
+slither_inn.add_animal(Clovis)
+slither_inn.add_animal(Heath)
 
-dire_dire_docks = Wetlands("Dire, Dire Docks")
+dire_dire_docks = Wetlands("Dire, Dire Docks", "scaley, swift swimming specimens")
 
-dire_dire_docks.addList(Justus)
-dire_dire_docks.addList(Brody)
-dire_dire_docks.addList(Angelica)
-dire_dire_docks.addList(Joscelin)
-dire_dire_docks.addList(Lise)
+dire_dire_docks.add_animal(Justus)
+dire_dire_docks.add_animal(Brody)
+dire_dire_docks.add_animal(Angelica)
+dire_dire_docks.add_animal(Joscelin)
+dire_dire_docks.add_animal(Lise)
 
 
 
