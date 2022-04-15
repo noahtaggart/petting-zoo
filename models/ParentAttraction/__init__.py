@@ -1,0 +1,1 @@
+from .parent_attraction import Attraction

@@ -18,3 +18,6 @@ class Animal:
     @chip_number.setter
     def chip_number(self, num):
         pass
+    
+    def __str__(self):
+        return f'{self.name} the {self.species}'

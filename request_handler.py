@@ -23,3 +23,5 @@ for area in areaList:
     for animal in area.animals:
         print(f"    • {animal.name} the {animal.species}")
         
+for animal in varmint_village.animals:
+    print(animal)
