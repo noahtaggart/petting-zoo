@@ -1,23 +1,21 @@
-# from areas import varmint_village, slither_inn, dire_dire_docks
-from animals import Pippo
+from areas import varmint_village, slither_inn, dire_dire_docks
+from animals import Obi
 
-print(Pippo.feed)
-
-
-# areaList = []
-# areaList.append(varmint_village)
-# areaList.append(slither_inn)
-# areaList.append(dire_dire_docks)
+print(Obi.feed())
 
 
-# print(varmint_village.last_critter_added)
-# print(slither_inn.last_critter_added)
-# print(dire_dire_docks.last_critter_added)
+areaList = []
+areaList.append(varmint_village)
+areaList.append(slither_inn)
+areaList.append(dire_dire_docks)
 
-# for area in areaList:
-#     print(f"{area.attraction_name} is where you'll find {area.description} like")
-#     for animal in area.animals:
-#         print(f"    • {animal.name} the {animal.species}")
+
+print(varmint_village.last_critter_added)
+print(slither_inn.last_critter_added)
+print(dire_dire_docks.last_critter_added)
+
+for area in areaList:
+    print(f"{area.attraction_name} is where you'll find {area.description} like")
+    for animal in area.animals:
+        print(f"    • {animal.name} the {animal.species}")
         
-# print(Obi.feed)
-# print(Pippo.feed)

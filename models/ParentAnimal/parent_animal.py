@@ -9,7 +9,7 @@ class Animal:
         self.date_added = date.today()
 
     def feed(self):
-        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+        return (f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
     
     @property
     def chip_number(self):
