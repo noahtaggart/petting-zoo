@@ -1,4 +1,4 @@
-from models import PettingZoo, Wetlands, SnakePit
+from models import PettingZoo, SnakePit, Wetlands
 from animals import Obi, Pippo, Zackariah, Nana, stinky, Carr, Malvina, Phillida, Konrad, Clovis, Heath, Justus, Brody, Angelica, Joscelin, Lise
 
 varmint_village = PettingZoo("Varmint Village")

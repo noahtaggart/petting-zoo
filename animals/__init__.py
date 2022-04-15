@@ -1,1 +1,1 @@
-from .animals import Pippo, Obi, Zackariah, Nana, Carr, Justus, Brody, Angelica, Joscelin, Lise, Malvina, Phillida, Konrad, Clovis, Heath, stinky
+from .animals import Pippo, Obi, Zackariah, Nana, Carr, Justus, Brody, Angelica, Joscelin, Lise, Malvina, Phillida, Konrad, Clovis, Heath, stinky, Bob

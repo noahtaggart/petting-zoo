@@ -1,7 +1,11 @@
 from areas import varmint_village, slither_inn, dire_dire_docks
-from animals import Obi
+from animals import Obi, Bob
 
 print(Obi.feed())
+print(Bob.feed())
+
+Bob.run()
+Bob.swim()
 
 
 areaList = []

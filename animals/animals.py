@@ -1,4 +1,4 @@
-from models import Llama, Goat, Sheep, Alpaca, Miniature_Horse, Burro, Turtle, Salmon, Catfish, Longnose_Gar, Koi, Milksnake, Scarletsnake, Rough_Greensnake, Cottonmouth, Plain_Bellied_Watersnake
+from models import Llama, Goat, Sheep, Alpaca, Miniature_Horse, Burro, Turtle, Salmon, Catfish, Longnose_Gar, Koi, Milksnake, Scarletsnake, Rough_Greensnake, Cottonmouth, Plain_Bellied_Watersnake, Goose
         
 Pippo = Llama('Pippo', 'Domestic Llama', 'morning shift', 'Llama Food', 5000 )
 Obi = Goat('Obi', 'Domestic Goat', 'morning shift', 'Goat Chow', 6996 )
@@ -18,3 +18,5 @@ Phillida = Scarletsnake('Phillida', 'Domestic Scarletsnake', "Scarlet Velvet Cak
 Konrad = Rough_Greensnake('Konrad', 'Domestic Rough Greensnake', "Smooth Redcake", 57000)
 Clovis = Cottonmouth('Clovis', 'Domestic Cottonmouth', "Cotton Candy", 50500)
 Heath = Plain_Bellied_Watersnake('Heath', 'Domestic Plain Bellied Watersnake', "toast", 60521)
+
+Bob = Goose("Bob", "Canadian Goose", "Evening shift", "watercress sandwhiches", 60053)
